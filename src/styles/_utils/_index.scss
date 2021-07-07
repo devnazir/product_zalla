@@ -1,0 +1,25 @@
+@use '../_mixins/' as mixin;
+
+.px-2 {
+  @include mixin.paddingX;
+}
+
+.py-2 {
+  @include mixin.paddingY(.2rem, .2rem);
+}
+
+.px-4 {
+  @include mixin.paddingX(4rem, 4rem);
+}
+
+.py-4 {
+  @include mixin.paddingY(.4rem, .4rem);
+}
+
+.px-6 {
+  @include mixin.paddingX(6rem, 6rem);
+}
+
+.py-6 {
+  @include mixin.paddingY(.6rem, .6rem);
+}

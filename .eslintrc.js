@@ -17,6 +17,8 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-        "react/no-unescaped-entities": ["off"]
+        "react/no-unescaped-entities": ["off"],
+        "react/display-name": ["off"],
+        "react/react-in-jsx-scope": ["off"],
     }
 };

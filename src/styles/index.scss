@@ -1,0 +1,15 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import 'components/UI/';
+@import './_utils/';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  margin: auto;
+}
+
+[ant-click-animating-without-extra-node]:after {
+  animation: 0s !important;
+}

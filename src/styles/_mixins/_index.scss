@@ -1,0 +1,13 @@
+@mixin paddingX($right: 2rem, $left: 2rem) {
+  padding: 0 $right 0 $left;
+}
+
+@mixin paddingY($top: .2rem, $bottom: .2rem) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+  height: max-content;
+}
+
+@mixin borderRadius($length: 5px) {
+  border-radius: $length;
+}

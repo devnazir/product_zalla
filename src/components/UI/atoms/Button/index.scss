@@ -1,0 +1,33 @@
+@use 'styles/_variables/' as colors;
+@use 'styles/_mixins/' as mixins;
+
+.btn {
+  display: block;
+  padding: 0 1rem;
+  font-size: 1em;
+  font-weight: 600;        
+
+  &.btn-default {
+    color: colors.$primary-dark
+  }
+
+  &.btn-white {
+    background-color: colors.$white;
+  }
+
+  &.btn-disabled {
+    text-transform: uppercase;
+  }
+
+  &.bordered {
+    @include mixins.borderRadius()
+  }
+
+  // other button class
+  &.btn-signup {
+    background-color: colors.$primary-dark;
+    &:hover, &:active, &:focus {
+      background-color: colors.$primary-dark;
+    }
+  }
+}
