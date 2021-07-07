@@ -1,0 +1,54 @@
+@use 'styles/_variables/' as colors;
+@use 'styles/_mixins' as mixins;
+
+.banner {
+  @include mixins.flex(space-between);
+  height: 600px;
+  background-color: colors.$primary-dark;
+  overflow: hidden;
+
+  .banner-left {
+    @include mixins.flex(center, flex-start, column);
+    z-index: 9999;
+
+    .banner-title {
+      color: colors.$white;
+      width: 500px;
+      font-weight: bold;
+      font-size: 3em;
+      line-height: 60px;
+    }
+
+    .banner-paragraph {
+      color: colors.$white;
+      width: 400px;
+      font-size: 1.2em;
+    }
+  }
+
+  .banner-right {
+    height: inherit;
+    width: 50%;
+    right: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: colors.$primary-dark;
+      transform: rotate(45deg) translate(-300px, 300px);
+    }
+    
+    .banner-img {
+      height: inherit;
+      width: 100%;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+}

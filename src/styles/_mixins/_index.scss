@@ -8,6 +8,13 @@
   height: max-content;
 }
 
+@mixin flex($justify-content: center, $align-items: center, $direction: row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $direction;
+}
+
 @mixin borderRadius($length: 5px) {
   border-radius: $length;
 }
