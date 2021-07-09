@@ -1,4 +1,4 @@
 - Typescript
 - Atomic Design (Design System)
 - Ant Design
-- Less
+- SASS
