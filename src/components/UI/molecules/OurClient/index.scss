@@ -1,0 +1,23 @@
+.our-client {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 768px){
+    .our-client-space {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem !important;
+      justify-content: center;
+
+      div {
+        &:last-child {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+    }
+  }
+}

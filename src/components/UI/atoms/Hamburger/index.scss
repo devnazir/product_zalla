@@ -1,0 +1,18 @@
+@use 'styles/_mixins' as mixins;
+
+.hamburger {
+  display: none;
+  height: 40px;
+  width: 30px;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px){
+    @include mixins.flex(space-evenly, center, column);
+  }
+
+  span {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+  }
+}

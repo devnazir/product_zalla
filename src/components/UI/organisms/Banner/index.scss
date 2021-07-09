@@ -10,6 +10,7 @@
   .banner-left {
     @include mixins.flex(center, flex-start, column);
     z-index: 9999;
+    width: max-content;
 
     .banner-title {
       color: colors.$white;
@@ -17,12 +18,24 @@
       font-weight: bold;
       font-size: 3em;
       line-height: 60px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .banner-paragraph {
       color: colors.$white;
       width: 400px;
       font-size: 1.2em;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:768px){
+      padding: 1rem;
     }
   }
 
@@ -39,16 +52,32 @@
       top: 0;
       bottom: 0;
       right: 0;
-      left: 0;
+      left: 450px;
+      width: 200px;
+      height: 200px;
       background-color: colors.$primary-dark;
-      transform: rotate(45deg) translate(-300px, 300px);
+      transform: rotate(45deg) translate(-250px, 530px) scale(2.2);
+
+      @media screen and (max-width:1125px){
+        & {
+          display: none;
+        }
+      }
     }
     
     .banner-img {
       height: inherit;
       width: 100%;
       object-fit: cover;
-      object-position: right;
+      object-position: center;
+
+      @media screen and (max-width:1200px){
+        object-position: right;
+      }
+    }
+
+    @media screen and (max-width:992px){
+      display: none;
     }
   }
 }

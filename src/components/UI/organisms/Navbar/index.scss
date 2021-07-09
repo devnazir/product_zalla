@@ -18,6 +18,10 @@
       width: 50%;
       font-weight: 500;
 
+      @media screen and (max-width:768px){
+        display: none;
+      }
+
       li {
         position: relative;
 
@@ -42,14 +46,26 @@
         }
       }
     }
+    
   }
 
   &.navbar-landing {
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width:768px){
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+
     .btn-group {
       display: flex;
+
+      @media screen and (max-width:768px){
+        display: none;
+      }
     }
   }
+
+  
 }

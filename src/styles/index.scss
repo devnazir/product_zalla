@@ -8,6 +8,10 @@ body {
   font-family: 'Poppins', sans-serif;
   max-width: 1440px;
   margin: auto;
+  
+  .App {
+    padding-bottom: 5rem;
+  }
 }
 
 [ant-click-animating-without-extra-node]:after {
