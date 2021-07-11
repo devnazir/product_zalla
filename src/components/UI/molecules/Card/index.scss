@@ -1,0 +1,32 @@
+@use 'styles/_variables' as colors;
+
+.card-program {
+  width: 100%;
+  box-shadow: 2px 2px 0px rgba(151, 150, 150, 0.205);
+  
+  .card-cover {
+    position: relative;
+    
+    .ant-image {
+      display: block;
+    }
+  }
+
+  .card-banner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    padding: 2rem;
+    height: 60%;
+    bottom: 0rem;
+    background-color: colors.$primary-dark;
+
+    span , h2 {
+      padding: 0;
+      margin: 0;
+      color: white;
+    }
+  }
+}

@@ -24,7 +24,7 @@ function WhyProductZalla() {
 
         <Row gutter={[32, 32]} align="middle">
           <Col xl={8} span={0} className="why-logo">
-            <Image src="/assets/images/logo.png" width={200} />
+            <Image src="/assets/images/logo.png" width={200} preview={false}/>
           </Col>
           <Col xl={8} span={12}>
             <div className="why-item-wrap">

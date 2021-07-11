@@ -1,20 +1,20 @@
-import { Text } from 'components/UI/atoms/Typhography';
+import { Link } from 'components/UI/atoms/Typhography';
 import { Fragment } from 'react';
 
 function ListNav() {
   return (
     <Fragment>
       <li>
-        <Text>Beranda</Text>
+        <Link  href="#">Beranda</Link>
       </li>
       <li>
-        <Text>Bootcamps</Text>
+        <Link href="#bootcamps">Bootcamps</Link>
       </li>
       <li>
-        <Text>Perusahaan</Text>
+        <Link href="#perusahaan">Perusahaan</Link>
       </li>
       <li>
-        <Text>Tentang Kami</Text>
+        <Link href="#tentang">Tentang Kami</Link>
       </li>
     </Fragment>
   );

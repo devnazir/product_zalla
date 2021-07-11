@@ -25,12 +25,20 @@
       li {
         position: relative;
 
-        &:hover::before {
+        a {
+          color: black;
+          
+          &:focus {
+            color: colors.$primary-dark;
+          }
+        }
+
+        &:hover::before, &:focus::before {
           transform: scale(1);
           transition: .3s;
         }
         
-        &:hover span {
+        &:hover a, &:focus a {
           color: colors.$primary-dark;
         }
 

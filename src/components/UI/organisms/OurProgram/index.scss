@@ -1,0 +1,18 @@
+@use 'styles/_variables/' as colors;
+
+.our-program {
+  background-color: colors.$gray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  .our-program-card {
+    margin-top: 2rem;
+  }
+
+  .card-program {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+  }
+}
